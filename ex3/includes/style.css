@@ -1,0 +1,283 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* border-color: black;
+    border-width: 1px;
+    border-style: solid; */
+  }
+  /* General CSS */
+  header,
+  nav,
+  main,
+  section,
+  article,
+  aside,
+  footer {
+    display: block;
+}
+  a {
+    text-decoration: none;   
+    color: #4242ff;
+}
+a:hover {
+   color: #ff8040; 
+}
+.selected {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #0000ff;
+    background-color: #b1a3a3;
+}
+  li {
+    list-style-type: none;
+}
+.clear {
+    clear: both;
+}
+.wrapper {
+    margin: 0px auto; 
+    max-width: 1000px;
+}
+  
+html{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+body {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    background:  url(../images/gradients.jpg) repeat-x;
+}
+header {
+    background: #555555;
+    height: 100px;
+}
+.dot {
+    height: 63px;
+    width: 63px;
+    background-color: #95cce1;
+    border-radius: 50%;
+    position: relative;
+    margin: 0px auto;
+    top:16px
+}
+footer {
+    background: #555555;
+    height: 65px;
+    min-width: 100%;
+}
+ul {
+    position: relative;
+    width: fit-content;
+    top: 45%;
+    margin: 0px auto;  
+}
+li{
+      font-size: 28px;
+}
+main, aside, nav{
+   background: #e0ded0; 
+}
+article {
+    position: absolute;
+    background: white;
+    border: 1px solid black;
+}
+main{
+    position: relative;
+}
+/* index css */
+#index{
+    width: 1000px;
+}
+#index nav {
+    float: right;
+    width: 180px;
+    border-left: 3px solid black;
+}
+#index main, #index nav{
+  height: 835px;
+}
+#index main {
+    float: left;
+width: 817px;
+}
+
+#index article:nth-child(-n + 2){
+    height: 300px;
+    width: 180px;
+}
+#index article:nth-child(1) {
+    top: 90px;
+    left: 20px;
+}
+#index article:nth-child(2) {
+    bottom: 85px;
+    left:279px;
+}
+#index article:nth-child(3) {
+    height: 288px;
+    width: 416px;
+    top: 20px;
+    right: 50px;
+}
+#index li {
+padding-bottom:30px;
+}
+/* layout1 css */
+#layout1, #layout1 div main, #lay1box {
+    height: 100%;
+}
+
+#layout1 nav {
+    background: url(../images/pattern.jpg) repeat; 
+    height: 185px;
+}
+#lay1box {
+    display:flex;
+}
+#lay1box aside {
+    flex: 16.2%;
+    min-height: 650px;
+    border-right: 3px solid black;
+}
+#lay1box main {
+    flex: 83.8%;
+    min-width: 850px;
+}
+#layout1 li, #layout2 li{
+    display: inline;
+    padding-right: 40px;
+}
+#layout1 main {
+    min-height: 650px;
+}
+#layout1 article:nth-child(-n + 2){
+    height: 88px;
+    width: 124px;
+}
+#layout1 article:nth-child(1) {
+    top: 65px;
+    right: 84px;
+}
+#layout1 article:nth-child(2) {
+    top: 65px;
+    right: 230px;
+}
+#layout1 article:nth-child(3) {
+    height: 286px;
+    width: 410px;
+    top: 235px;
+    right: 84px;
+}
+#layout1 article:nth-child(4) {
+    height: 110px;
+    width: 260px;
+    top: 411px;
+    right: 514px;
+}
+.footerLay{
+    position:fixed;
+    bottom: 0;
+}
+#layout1 nav ul{
+    margin-left: 160px;
+}
+/* layout2 css */
+#layout2 nav {
+    position: relative;
+    background: url(../images/pattern_lay2.jpg) repeat; 
+    height: 160px;
+}
+#layout2 nav ul{
+    top: 20px;
+}
+
+#lay2Main{
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+}
+#lay2Main article{
+    position: relative;
+    margin: 0 auto;    
+}
+#lay2Main article:nth-child(3n-1){
+   background-color: #0000ff;
+   margin-left:90px;
+   margin-right: 90px;
+}
+#layout2{
+    height: 100%;
+ 
+}
+button {
+    position: absolute;
+    float:left;
+    font-size: 25px;
+    margin-left: 15px;
+    background-color: #b13fb1;
+    font-weight: bold;
+    color: aliceblue;
+    border-color: #f7b0ff;
+    bottom: 0;
+}
+#clear-btn{
+    left: 100px;
+}
+
+@media only screen and (max-width:412px){
+    button {
+        background-color: #ff8040;
+    }
+    li{
+        font-size: x-small;
+    }
+     #lay2Main article:nth-child(n){
+        margin: 0 auto; 
+     }
+     .hamburger {
+        background-image: url(../images/hamburger_icon.png) ;
+        float: right;
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+    }
+}
+@media only screen and (min-width:412px) and (max-width:594px){
+    .hamburger {
+        background-image: url(../images/hamburger_icon.png) ;
+        float: right;
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+    }
+    button {
+        background-color: #008000;
+    }
+    li{
+        font-size: x-small;
+    }
+     #lay2Main article:nth-child(n){
+        margin-left:160px;
+
+     }
+}
+
+@media only screen and (min-width:594px) and (max-width:850px){
+    li{
+        font-size: larger;
+    }
+    button {
+        background-color: #000000;
+    }
+    #lay2Main article:nth-child(3n-1){
+        margin: 0 auto; 
+     }
+     #lay2Main article:nth-child(2n-1){
+        margin-left:90px;
+        margin-right: 90px;
+     }
+}
