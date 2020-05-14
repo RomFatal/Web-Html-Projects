@@ -6,16 +6,10 @@
     border-style: solid; */
   }
   /* General CSS */
-  header,
-  nav,
-  main,
-  section,
-  article,
-  aside,
-  footer {
+header, nav, main, section, article, aside, footer {
     display: block;
 }
-  a {
+a {
     text-decoration: none;   
     color: #4242ff;
 }
@@ -38,7 +32,6 @@ a:hover {
     margin: 0px auto; 
     max-width: 1000px;
 }
-  
 html{
     width: 100%;
     height: 100%;
@@ -78,10 +71,9 @@ li{
       font-size: 28px;
 }
 main, aside, nav{
-   background: #e0ded0; 
+   background: #88a4c979; 
 }
 article {
-    position: absolute;
     background: white;
     border: 1px solid black;
 }
@@ -91,6 +83,9 @@ main{
 /* index css */
 #index{
     width: 1000px;
+}
+#index article, #layout1 article{
+    position: absolute;
 }
 #index nav {
     float: right;
@@ -102,9 +97,8 @@ main{
 }
 #index main {
     float: left;
-width: 817px;
+    width: 817px;
 }
-
 #index article:nth-child(-n + 2){
     height: 300px;
     width: 180px;
@@ -127,10 +121,12 @@ width: 817px;
 padding-bottom:30px;
 }
 /* layout1 css */
+#layout1 {
+    width: 1000px;
+}
 #layout1, #layout1 div main, #lay1box {
     height: 100%;
 }
-
 #layout1 nav {
     background: url(../images/pattern.jpg) repeat; 
     height: 185px;
@@ -154,16 +150,15 @@ padding-bottom:30px;
 #layout1 main {
     min-height: 650px;
 }
-#layout1 article:nth-child(-n + 2){
+#layout1 article:nth-child(-n+2 ){
     height: 88px;
     width: 124px;
+    top: 65px;
 }
 #layout1 article:nth-child(1) {
-    top: 65px;
     right: 84px;
 }
 #layout1 article:nth-child(2) {
-    top: 65px;
     right: 230px;
 }
 #layout1 article:nth-child(3) {
@@ -191,35 +186,28 @@ padding-bottom:30px;
     background: url(../images/pattern_lay2.jpg) repeat; 
     height: 160px;
 }
-#layout2 nav ul{
-    top: 20px;
-}
-
-#lay2Main{
+#boxContainer{
       height: 100%;
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
+      margin-left: -55px;
 }
-#lay2Main article{
-    position: relative;
-    margin: 0 auto;    
+#boxContainer article{
+    height: 312px;
+    width: 204px;
+    margin-top: 48px;
+    margin-left: 113px;
 }
-#lay2Main article:nth-child(3n-1){
-   background-color: #0000ff;
-   margin-left:90px;
-   margin-right: 90px;
+#boxContainer :last-child{
+margin-bottom: 113px;
 }
-#layout2{
-    height: 100%;
- 
-}
-button {
+button{
     position: absolute;
-    float:left;
     font-size: 25px;
     margin-left: 15px;
     background-color: #b13fb1;
-    font-weight: bold;
     color: aliceblue;
     border-color: #f7b0ff;
     bottom: 0;
@@ -227,57 +215,27 @@ button {
 #clear-btn{
     left: 100px;
 }
-
-@media only screen and (max-width:412px){
-    button {
-        background-color: #ff8040;
+/* Media Query */
+@media only screen and (max-width:480px){
+    #layout2 .dot {
+        background-color: #030303;
     }
-    li{
+    #layout2 li{
         font-size: x-small;
     }
-     #lay2Main article:nth-child(n){
-        margin: 0 auto; 
-     }
-     .hamburger {
-        background-image: url(../images/hamburger_icon.png) ;
-        float: right;
-        height: 50px;
-        width: 50px;
-        margin-right: 10px;
-    }
-}
-@media only screen and (min-width:412px) and (max-width:594px){
     .hamburger {
         background-image: url(../images/hamburger_icon.png) ;
         float: right;
         height: 50px;
         width: 50px;
-        margin-right: 10px;
+        margin: 10px;
     }
-    button {
-        background-color: #008000;
-    }
-    li{
-        font-size: x-small;
-    }
-     #lay2Main article:nth-child(n){
-        margin-left:160px;
-
-     }
 }
-
-@media only screen and (min-width:594px) and (max-width:850px){
-    li{
+@media only screen and (min-width:481px) and (max-width:768px){
+    #layout2 .dot {
+        background-color: #800000;
+    }
+    #layout2 li{
         font-size: larger;
     }
-    button {
-        background-color: #000000;
-    }
-    #lay2Main article:nth-child(3n-1){
-        margin: 0 auto; 
-     }
-     #lay2Main article:nth-child(2n-1){
-        margin-left:90px;
-        margin-right: 90px;
-     }
 }
