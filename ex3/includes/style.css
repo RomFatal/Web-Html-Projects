@@ -63,7 +63,7 @@ footer {
 }
 ul {
     position: relative;
-    width: fit-content;
+    max-width: max-content;
     top: 45%;
     margin: 0px auto;  
 }
