@@ -218,17 +218,18 @@ button{
 /* Media Query */
 @media only screen and (max-width:480px){
     #layout2 .dot {
-        background-color: #030303;
+        background-color: #000000;
     }
     #layout2 li{
         font-size: x-small;
     }
     .hamburger {
+        position: absolute;
         background-image: url(../images/hamburger_icon.png) ;
-        float: right;
         height: 50px;
         width: 50px;
-        margin: 10px;
+        right: 10px;
+        top: 10px;
     }
 }
 @media only screen and (min-width:481px) and (max-width:768px){
