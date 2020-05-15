@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Dan Panorama</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="includes/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Going crazy at home? Tired of being alone?</h1>
+            <br>
+            <h1>Registration for geting COVID-19</h1>
+            <h2>The only way to go on vacation today</h2>
+            <h3>Free All Inclusive</h3>
+            <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="GET">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label>Full Name:
+                            <input class="form-control" pattern="([a-zA-Z]{2,75} ?){2,3}" name="fullName" required
+                                type="text" title="Insert Full Name" placeholder="Full Name">
+                            <span class="hint"><br> At least 2 words 2 letters each</span>
+                        </label>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label>Password
+                            <input class="form-control"
+                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" name="pass"
+                                type="password" id="pass" title="Min 8" placeholder="Password">
+                            <span class="hint">UpperCase, LowerCase, Number/SpecialChar and min 8 Chars</span>
+                        </label>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label>Email
+                            <input class="form-control" autocomplete name="mail" type="email" placeholder="Email">
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label>Website
+                            <input class="form-control" name="website" type="url" placeholder="url">
+                        </label>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label>Cell Phone
+                            <input class="form-control" pattern="[0][5][0-9]{7,8}" name="phone" type="tel"
+                                placeholder="Cell Phone">
+                            <span class="hint">start with 05 and between 9-10 digits</span>
+                        </label>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label>Vacation days
+                            <input class="form-control" name="coffee" type="number" placeholder="Number of days">
+                        </label>
+                    </div>
+                </div>
+
+                <label> Bacteria Amount Required
+                    <input class="form-control-range" max="100" min="50" name="temper" type="range">
+                </label>
+                Special Requirement
+                <textarea class="form-control" cols="20" name="address" rows="5">special requirement</textarea>
+                </label>
+                <div class="row">
+                    <div class="col">
+                        <fieldset>
+                            <legend>Hobbies:</legend>
+                            <div class="form-check-inline">
+
+                                <label class="form-check-label">
+                                    <input class="form-check-input" name="interests[]" type="checkbox" value="GYM">GYM
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+
+                                <label class="form-check-label">
+                                    <input class="form-check-input" name="interests[]" type="checkbox"
+                                        value="Balcony">Balcony
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+
+                                <label class="form-check-label">
+                                    <input class="form-check-input" name="interests[]" type="checkbox"
+                                        value="Sea-View">Sea-View
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="col">
+                        <fieldset>
+                            <legend>Number of guests</legend>
+                            <label>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="gender" type="radio" value="male"> Single
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="gender" type="radio" value="female"> Couple
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input" name="gender" type="radio" value="other"> Trio
+                                </div>
+                            </label>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <label>Arrival time
+                    <select class="custom-select col-md-6" name="age" <option selected="selected">Choose...</option>
+                        <option value="10">1</option>
+                        <option value="11">2</option>
+                        <option value="12">3</option>
+                        <option value="13">4</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                    </select>
+                </label>
+                <div class="col text-center">
+                    <input class="btn btn-primary center-block" id="btn" type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="includes/js/jquery-3.2.1.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="includes/js/main.js"></script>
+</body>
+
+</html>

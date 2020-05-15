@@ -1,0 +1,32 @@
+label {
+    display: block;
+}
+.error {
+    color: darkred;
+}
+.hint { display: none; }
+input:focus + .hint { display: inline; }
+.container{
+margin-top: 80px;
+}
+h1{
+    color: #02007a;
+}
+h2{
+    color: #ff0000;
+}
+h3{
+    color: #ff9100;
+}
+h1:first-child{
+    color: #020202;
+}
+main{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+body{
+    background-image: url(/images/healthcare-and-medical.svg);
+    background-size: 300px 300px;
+}
