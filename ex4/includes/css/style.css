@@ -27,6 +27,6 @@ main{
 }
 
 body{
-    background-image: url(/images/healthcare-and-medical.svg);
+    background-image: url(../../images/healthcare-and-medical.svg);
     background-size: 300px 300px;
 }
