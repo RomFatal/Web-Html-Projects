@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Garbage Info</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="./includes/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-light navbar-top d-flex justify-content-end">
+            <a class="logo mr-auto" href="index.html"></a>
+            <h3 class="mr-auto">Ramat Gan Sanitation</h3>
+            <h5>Driver</h5>
+            <a class="material-icons navbar-brand p-2 header_icon" href="#">search</a>
+            <a class="material-icons navbar-brand p-2 header_icon" href="#">notifications_active</a>
+            <a class="material-icons navbar-brand p-2 header_icon" href="#">settings</a>
+            <img src="images/driver.png" width="80" alt="">
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-second navhover">
+            <span class="navbar-toggler navbar-text-current">Garbage List</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="nav collapse navbar-collapse nav-justified" id="navbarNav">
+                <li class="nav-item nav-link">
+                    <a class="nav-link font-weight-bold text-nowrap h5" href="#">City Map
+                        <span class="material-icons navbar-brand icon">explore</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-link selected current">
+                    <a class="nav-link active font-weight-bold text-nowrap h5" href="index.html">Dash Board
+                        <span class="material-icons navbar-brand icon">home</span>
+                        <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item nav-link ">
+                    <a class="nav-link font-weight-bold text-nowrap h5" href="#">Plan Route
+                        <span class="material-icons navbar-brand icon">add_location</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-link ">
+                    <a class="nav-link font-weight-bold text-nowrap h5" href="#">Update
+                        <span class="material-icons navbar-brand icon">360</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-link ">
+                    <a class="nav-link font-weight-bold text-nowrap h5" href="#">Reports
+                        <span class="material-icons navbar-brand icon">descriptions</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light py-0 d-none d-sm-block d-sm-none">
+            <ul class="nav collapse navbar-collapse nav-justified d-none d-sm-block d-sm-none" id="navbarNav2">
+                <li class="nav-item nav-link disabled">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item nav-link crumb disabled">
+                    <a class="nav-link active font-weight-bold" href="index.html">Garbage Info</a>
+                </li>
+                <li class="nav-item nav-link navHide disabled">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item nav-link navHide disabled">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item nav-link navHide disabled">
+                    <a class="nav-link" href="#"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="formInfo">
+            <div class="form-row">
+                <div class="col mr-5">
+                    <div class="form-group pt-3">
+                        <label for="Address">Address</label>
+                        <input id='Address' type="text" class="form-control form-control-lg" name="Address"
+                            value="Sderot yerushalayim, 9" disabled>
+                    </div>
+
+                    <div class="form-group pt-3">
+                        <label for="Capacity">Capacity</label>
+                        <input id='Capacity' type="text" class="form-control form-control-lg" name="Capacity"
+                            value="70%" disabled>
+                    </div>
+                    <div class="form-group pt-3">
+                        <label for="Comment">Comment</label>
+                        <input id="Comment" type="text" class="form-control form-control-lg" name="Comment"
+                            value="One-sided street" disabled>
+                    </div>
+
+                    <div class="form-group pt-3">
+                        <div class="card pb-1">
+                            <div class="card-body">
+                                <h4 class="card-title text-muted">Urgency</h4>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio1" name="customRadio"
+                                                class="custom-control-input" disabled checked>
+                                            <label class="custom-control-label" for="customRadio1">Low</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio2" name="customRadio "
+                                                class="custom-control-input" disabled>
+                                            <label class="custom-control-label" for="customRadio2">Mid</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio3" name="customRadio"
+                                                class="custom-control-input" disabled>
+                                            <label class="custom-control-label" for="customRadio3">High</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio4" name="customRadio"
+                                                class="custom-control-input" disabled>
+                                            <label class="custom-control-label" for="customRadio4">Very High</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./images/Trash.jpg" class="img-fluid infoImg" alt="Trash">
+                </div>
+            </div>
+            <div class="form-row pt-3">
+                <div class="col mr-5">
+                    <a class="btn btn-danger btn-lg btn-block" href="#" role="button">Delete Garbage</a>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-block btn-lg">Edit Garbage</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="./includes/scripts.js"></script>
+</body>
