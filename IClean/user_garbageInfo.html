@@ -23,16 +23,16 @@
 
     <header>
         <nav class="navbar navbar-light navbar-top d-flex justify-content-end">
-            <a class="logo mr-auto" href="index.html"></a>
+            <a class="logo mr-auto" href="user_index.html"></a>
             <h3 class="mr-auto">Ramat Gan Sanitation</h3>
-            <h5>Driver</h5>
+            <h5>Resident</h5>
             <a class="material-icons navbar-brand p-2 header_icon" href="#">search</a>
             <a class="material-icons navbar-brand p-2 header_icon" href="#">notifications_active</a>
             <a class="material-icons navbar-brand p-2 header_icon" href="#">settings</a>
-            <img src="images/driver.png" width="80" alt="">
+            <img src="images/resident.png" width="80" alt="">
         </nav>
-        <nav class="navbar navbar-expand-lg navbar-light navbar-second navhover">
-            <span class="navbar-toggler navbar-text-current">Garbage List</span>
+        <nav id="nav-reflection" class="navbar navbar-expand-lg navbar-light navbar-second navhover">
+            <span class="navbar-toggler navbar-text-current">Garbage info</span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,43 +43,27 @@
                         <span class="material-icons navbar-brand icon">explore</span>
                     </a>
                 </li>
-                <li class="nav-item nav-link selected current">
-                    <a class="nav-link active font-weight-bold text-nowrap h5" href="index.html">Dash Board
+                <li class="nav-item nav-link selected current text-nowrap">
+                    <a class="nav-link active font-weight-bold h5" href="user_index.html">My neighborhood
                         <span class="material-icons navbar-brand icon">home</span>
                         <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item nav-link ">
-                    <a class="nav-link font-weight-bold text-nowrap h5" href="#">Plan Route
-                        <span class="material-icons navbar-brand icon">add_location</span>
-                    </a>
-                </li>
-                <li class="nav-item nav-link ">
-                    <a class="nav-link font-weight-bold text-nowrap h5" href="#">Update
-                        <span class="material-icons navbar-brand icon">360</span>
-                    </a>
-                </li>
-                <li class="nav-item nav-link ">
-                    <a class="nav-link font-weight-bold text-nowrap h5" href="#">Reports
+                <li class="nav-item nav-link">
+                    <a class="nav-link font-weight-bold text-nowrap h5" href="#">Contact us
                         <span class="material-icons navbar-brand icon">descriptions</span>
                     </a>
                 </li>
             </ul>
         </nav>
         <nav class="navbar navbar-expand-lg navbar-light py-0 d-none d-sm-block d-sm-none">
-            <ul class="nav collapse navbar-collapse nav-justified d-none d-sm-block d-sm-none" id="navbarNav2">
+            <ul class="nav collapse navbar-collapse nav-justified" id="navbarNav2">
                 <li class="nav-item nav-link disabled">
                     <a class="nav-link" href="#"></a>
                 </li>
                 <li class="nav-item nav-link crumb disabled">
-                    <a class="nav-link active font-weight-bold" href="index.html">Garbage Info</a>
+                    <a class="nav-link active font-weight-bold" href="user_index.html">Garbage info</a>
                 </li>
-                <li class="nav-item nav-link navHide disabled">
-                    <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item nav-link navHide disabled">
-                    <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item nav-link navHide disabled">
+                <li class="nav-item nav-link disabled">
                     <a class="nav-link" href="#"></a>
                 </li>
             </ul>
@@ -148,11 +132,9 @@
                 </div>
             </div>
             <div class="form-row pt-3">
-                <div class="col mr-5">
-                    <a class="btn btn-danger btn-lg btn-block" href="#" role="button">Delete Garbage</a>
-                </div>
+               
                 <div class="col">
-                    <button type="button" onclick="editgarbage(this)" class="btn btn-primary btn-block btn-lg">Edit Garbage</button>
+                    <button type="button" onclick="usereditgarbage(this)" class="btn btn-primary btn-block btn-lg">Edit Garbage</button>
                 </div>
             </div>
         </div>

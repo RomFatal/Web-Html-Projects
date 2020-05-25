@@ -20,13 +20,13 @@
 <body>
     <header>
         <nav class="navbar navbar-light navbar-top d-flex justify-content-end">
-            <a class="logo mr-auto" href="index.html"></a>
+            <a class="logo mr-auto" href="user_index.html"></a>
             <h3 class="mr-auto">Ramat Gan Sanitation</h3>
-            <h5>Driver</h5>
+            <h5>Resident</h5>
             <a class="material-icons navbar-brand p-2 header_icon" href="#">search</a>
             <a class="material-icons navbar-brand p-2 header_icon" href="#">notifications_active</a>
             <a class="material-icons navbar-brand p-2 header_icon" href="#">settings</a>
-            <img src="images/driver.png" width="80" alt="">
+            <img src="images/resident.png" width="80" alt="">
         </nav>
         <nav id="nav-reflection" class="navbar navbar-expand-lg navbar-light navbar-second navhover">
             <span class="navbar-toggler navbar-text-current">Garbage List</span>
@@ -41,22 +41,12 @@
                     </a>
                 </li>
                 <li class="nav-item nav-link selected current text-nowrap">
-                    <a class="nav-link active font-weight-bold h5" href="index.html">Dash Board
+                    <a class="nav-link active font-weight-bold h5" href="index.html">My neighborhood
                         <span class="material-icons navbar-brand icon">home</span>
                         <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item nav-link text-nowrap">
-                    <a class="nav-link font-weight-bold h5" href="#">Plan Route
-                        <span class="material-icons navbar-brand icon">add_location</span>
-                    </a>
-                </li>
-                <li class="nav-item nav-link text-nowrap h5">
-                    <a class="nav-link font-weight-bold" href="#">Update
-                        <span class="material-icons navbar-brand icon">360</span>
-                    </a>
-                </li>
-                <li class="nav-item nav-link text-nowrap h5">
-                    <a class="nav-link font-weight-bold" href="user_index.html">Reports
+                <li class="nav-item nav-link">
+                    <a class="nav-link font-weight-bold text-nowrap h5" href="index.html">Contact us
                         <span class="material-icons navbar-brand icon">descriptions</span>
                     </a>
                 </li>
@@ -73,12 +63,6 @@
                 <li class="nav-item nav-link disabled">
                     <a class="nav-link" href="#"></a>
                 </li>
-                <li class="nav-item nav-link disabled">
-                    <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item nav-link disabled">
-                    <a class="nav-link" href="#"></a>
-                </li>
             </ul>
         </nav>
     </header>
@@ -90,7 +74,7 @@
                     class="form-control form-control-lg d-none d-sm-block d-sm-none filter" placeholder="Search">
             </div>
             <div class="col-4 activity">
-                <select class="form-control form-control-lg filter" name="Urgency" id="Urgency">
+                <select class="form-control form-control-lg filter" name="Urgency_user" id="Urgency_user">
                     <option value="all">Urgency</option>
                     <option value="Low">Low</option>
                     <option value="Mid">Mid</option>
@@ -99,8 +83,8 @@
                 </select>
             </div>
             <div class="col-4 activity">
-                <a class="btn btn-outline-success btn-block btn-lg filter " href="addGarbage.html" role="button">Add New
-                    Garbage</a>
+                <a class="btn btn-outline-success btn-block btn-lg filter " href="user_add_garbage.html" role="button">Add New
+                    Pickup Place</a>
             </div>
         </div>
         <div class="tableBox">
@@ -120,81 +104,82 @@
                         <td>Ha-Yarden, 112</td>
                         <td>75%</td>
                         <td>High</td>
-                        <td><a href="garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">visibility</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">delete_forever</span></a></td>
+                        <td><a href="user_garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
+                            <a href="user_garbageInfo.html"><span
+                                class="material-icons navbar-brand">visibility</span></a></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>Sderot yerushalayim, 9</td>
                         <td>60%</td>
                         <td>Mid</td>
-                        <td><a href="garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">visibility</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">delete_forever</span></a></td>
+                        <td><a href="user_garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
+                            <a href="user_garbageInfo.html"><span
+                                class="material-icons navbar-brand">visibility</span></a></td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>Haroe, 38</td>
                         <td>54%</td>
                         <td>Low</td>
-                        <td><a href="garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">visibility</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">delete_forever</span></a></td>
+                        <td><a href="user_garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
+                            <a href="user_garbageInfo.html"><span
+                                class="material-icons navbar-brand">visibility</span></a></td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>Bar Kochva, 113</td>
                         <td>96%</td>
                         <td>Very High</td>
-                        <td><a href="garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">visibility</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">delete_forever</span></a></td>
+                        <td><a href="user_garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
+                            <a href="user_garbageInfo.html"><span
+                                class="material-icons navbar-brand">visibility</span></a></td>
                     </tr>
                     <tr>
                         <td>5</td>
                         <td>Anna Frank, 12</td>
                         <td>45%</td>
                         <td>Mid</td>
-                        <td><a href="garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">visibility</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">delete_forever</span></a></td>
+                        <td><a href="user_garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
+                            <a href="user_garbageInfo.html"><span
+                                class="material-icons navbar-brand">visibility</span></a></td>
                     </tr>
                     <tr>
                         <td>6</td>
                         <td>Negba, 12</td>
                         <td>84%</td>
                         <td>High</td>
-                        <td><a href="garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">visibility</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">delete_forever</span></a></td>
+                        <td><a href="user_garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
+                            <a href="user_garbageInfo.html"><span
+                                class="material-icons navbar-brand">visibility</span></a>
+                        </td>
                     </tr>
                     <tr>
                         <td>7</td>
                         <td>Aba Hilel, 3</td>
                         <td>32%</td>
                         <td>Low</td>
-                        <td><a href="garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">visibility</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">delete_forever</span></a></td>
+                        <td><a href="user_garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
+                            <a href="user_garbageInfo.html"><span
+                                class="material-icons navbar-brand">visibility</span></a></td>
                     </tr>
                     <tr>
                         <td>8</td>
                         <td>HaMelech Yosef, 12</td>
                         <td>66%</td>
                         <td>High</td>
-                        <td><a href="garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">visibility</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">delete_forever</span></a></td>
+                        <td><a href="user_garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
+                            <a href="user_garbageInfo.html"><span
+                                class="material-icons navbar-brand">visibility</span></a></td>
                     </tr>
                     <tr>
                         <td>9</td>
                         <td>Yad Shalom, 15</td>
                         <td>59%</td>
                         <td>Mid</td>
-                        <td><a href="garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">visibility</span></a>
-                            <a href="garbageInfo.html"><span class="material-icons navbar-brand">delete_forever</span></a></td>
+                        <td><a href="user_garbageInfo.html"><span class="material-icons navbar-brand">edit</span></a>
+                            <a href="user_garbageInfo.html"><span
+                                class="material-icons navbar-brand">visibility</span></a></td>
                     </tr>
                 </tbody>
             </table>

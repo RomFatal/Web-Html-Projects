@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel='icon' href='favicon.ico' type='image/x-icon' />
-    <title>Garbage Info</title>
+    <title>Add Station</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -15,24 +14,23 @@
         </script>
     <link rel="stylesheet" href="./includes/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:wght@500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
         <nav class="navbar navbar-light navbar-top d-flex justify-content-end">
-            <a class="logo mr-auto" href="index.html"></a>
+            <a class="logo mr-auto" href="user_index.html"></a>
             <h3 class="mr-auto">Ramat Gan Sanitation</h3>
-            <h5>Driver</h5>
+            <h5>Resident</h5>
             <a class="material-icons navbar-brand p-2 header_icon" href="#">search</a>
             <a class="material-icons navbar-brand p-2 header_icon" href="#">notifications_active</a>
             <a class="material-icons navbar-brand p-2 header_icon" href="#">settings</a>
-            <img src="images/driver.png" width="80" alt="">
+            <img src="images/resident.png" width="80" alt="">
         </nav>
-        <nav class="navbar navbar-expand-lg navbar-light navbar-second navhover">
-            <span class="navbar-toggler navbar-text-current">Garbage List</span>
+        <nav id="nav-reflection" class="navbar navbar-expand-lg navbar-light navbar-second navhover">
+            <span class="navbar-toggler navbar-text-current">Add pickup place</span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,43 +41,27 @@
                         <span class="material-icons navbar-brand icon">explore</span>
                     </a>
                 </li>
-                <li class="nav-item nav-link selected current">
-                    <a class="nav-link active font-weight-bold text-nowrap h5" href="index.html">Dash Board
+                <li class="nav-item nav-link selected current text-nowrap">
+                    <a class="nav-link active font-weight-bold h5" href="user_index.html">My neighborhood
                         <span class="material-icons navbar-brand icon">home</span>
                         <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item nav-link ">
-                    <a class="nav-link font-weight-bold text-nowrap h5" href="#">Plan Route
-                        <span class="material-icons navbar-brand icon">add_location</span>
-                    </a>
-                </li>
-                <li class="nav-item nav-link ">
-                    <a class="nav-link font-weight-bold text-nowrap h5" href="#">Update
-                        <span class="material-icons navbar-brand icon">360</span>
-                    </a>
-                </li>
-                <li class="nav-item nav-link ">
-                    <a class="nav-link font-weight-bold text-nowrap h5" href="#">Reports
+                <li class="nav-item nav-link">
+                    <a class="nav-link font-weight-bold text-nowrap h5" href="#">Contact us
                         <span class="material-icons navbar-brand icon">descriptions</span>
                     </a>
                 </li>
             </ul>
         </nav>
         <nav class="navbar navbar-expand-lg navbar-light py-0 d-none d-sm-block d-sm-none">
-            <ul class="nav collapse navbar-collapse nav-justified d-none d-sm-block d-sm-none" id="navbarNav2">
+            <ul class="nav collapse navbar-collapse nav-justified" id="navbarNav2">
                 <li class="nav-item nav-link disabled">
                     <a class="nav-link" href="#"></a>
                 </li>
                 <li class="nav-item nav-link crumb disabled">
-                    <a class="nav-link active font-weight-bold" href="index.html">Garbage Info</a>
+                    <a class="nav-link active font-weight-bold" href="user_index.html">Add pickup place</a>
                 </li>
-                <li class="nav-item nav-link navHide disabled">
-                    <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item nav-link navHide disabled">
-                    <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item nav-link navHide disabled">
+                <li class="nav-item nav-link disabled">
                     <a class="nav-link" href="#"></a>
                 </li>
             </ul>
@@ -87,26 +69,22 @@
     </header>
 
     <main>
-        <div class="formInfo">
-            <div class="form-row">
+
+        <form action="#" method="get">
+            <div class="form-row pt-5">
                 <div class="col mr-5">
                     <div class="form-group pt-3">
-                        <label for="Address">Address</label>
-                        <input id='Address' type="text" class="form-control form-control-lg" name="Address"
-                            value="Sderot yerushalayim, 9" disabled>
-                    </div>
-
-                    <div class="form-group pt-3">
-                        <label for="Capacity">Capacity</label>
-                        <input id='Capacity' type="text" class="form-control form-control-lg" name="Capacity"
-                            value="70%" disabled>
+                        <input type="text" class="form-control form-control-lg" placeholder="Address" name="Address"
+                            value="">
                     </div>
                     <div class="form-group pt-3">
-                        <label for="Comment">Comment</label>
-                        <input id="Comment" type="text" class="form-control form-control-lg" name="Comment"
-                            value="One-sided street" disabled>
+                        <input type="text" class="form-control form-control-lg" placeholder="Capacity" name="Capacity"
+                            value="">
                     </div>
-
+                      <div class="form-group pt-3">
+                        <input type="text" class="form-control form-control-lg" placeholder="Comment" name="Comment"
+                            value="">
+                    </div>
                     <div class="form-group pt-3">
                         <div class="card pb-1">
                             <div class="card-body">
@@ -115,12 +93,12 @@
                                     <div class="col">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" id="customRadio1" name="customRadio"
-                                                class="custom-control-input" disabled checked>
+                                                class="custom-control-input">
                                             <label class="custom-control-label" for="customRadio1">Low</label>
                                         </div>
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio2" name="customRadio "
-                                                class="custom-control-input" disabled>
+                                            <input type="radio" id="customRadio2" name="customRadio"
+                                                class="custom-control-input">
                                             <label class="custom-control-label" for="customRadio2">Mid</label>
                                         </div>
 
@@ -128,12 +106,12 @@
                                     <div class="col">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" id="customRadio3" name="customRadio"
-                                                class="custom-control-input" disabled>
+                                                class="custom-control-input">
                                             <label class="custom-control-label" for="customRadio3">High</label>
                                         </div>
                                         <div class="custom-control custom-radio">
                                             <input type="radio" id="customRadio4" name="customRadio"
-                                                class="custom-control-input" disabled>
+                                                class="custom-control-input">
                                             <label class="custom-control-label" for="customRadio4">Very High</label>
                                         </div>
                                     </div>
@@ -143,19 +121,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <img src="./images/Trash.jpg" class="img-fluid infoImg" alt="Trash">
-                </div>
+
+                    <div class="col">
+                        <div class="file-field">
+                            <div class="z-depth-1-half mb-4">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg" class="img-fluid"
+                                alt="example placeholder">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                              <div class="btn btn-mdb-color btn-rounded float-left">
+                                <span>Add Photo</span>
+                                <input type="file">
+                              </div>
+                            </div>
+                          </div>
+                    </div>
             </div>
             <div class="form-row pt-3">
                 <div class="col mr-5">
-                    <a class="btn btn-danger btn-lg btn-block" href="#" role="button">Delete Garbage</a>
+                    <a class="btn btn-danger btn-lg btn-block" href="user_index.html" role="button">Cancel</a>
                 </div>
                 <div class="col">
-                    <button type="button" onclick="editgarbage(this)" class="btn btn-primary btn-block btn-lg">Edit Garbage</button>
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">Save Station</button>
                 </div>
             </div>
-        </div>
+        </form>
     </main>
 
     <footer></footer>
