@@ -1,0 +1,51 @@
+{% extends 'base_driver.html' %}
+{% block detail %}
+Garbage List
+{% endblock %}
+{% block content %}
+        <div class="form-row">
+            <div class="col-4 activity">
+                <input type="text" id="table-search"
+                    class="form-control form-control-lg d-none d-sm-block d-sm-none filter" placeholder="Search">
+            </div>
+            <div class="col-4 activity">
+                <select class="form-control form-control-lg filter" name="Urgency" id="Urgency">
+                    <option value="all">Urgency</option>
+                    <option value="Low">Low</option>
+                    <option value="Mid">Mid</option>
+                    <option value="High">High</option>
+                    <option value="Very High">Very High</option>
+                </select>
+            </div>
+            <div class="col-4 activity">
+                <a class="btn btn-outline-success btn-block btn-lg filter " href="Add-Garbage/" role="button">Add New
+                    Garbage</a>
+            </div>
+        </div>
+        <div class="tableBox">
+            <table class="table table-striped table-bordered mt-4 table-hover text-center">
+                <thead>
+                    <tr class="bg-success text-white h5">
+                        <th>ID</th>
+                        <th>Address</th>
+                        <th>Capacity</th>
+                        <th>Comment</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for garbage in garbages %}
+                    <tr>
+                        <td>{{garbage.id}}</td>
+                        <td>{{garbage.Address}}</td>
+                        <td>{{garbage.Capacity}}</td>
+                        <td>{{garbage.Comment}}</td>
+                        <td><a href="Edit-Garbage/{{garbage.id}}"><span class="material-icons navbar-brand">edit</span></a>
+                            <a href="Edit-Garbage/{{garbage.id}}"><span class="material-icons navbar-brand">visibility</span></a>
+                            <a href="Edit-Garbage/{{garbage.id}}"><span class="material-icons navbar-brand">delete_forever</span></a></td>
+                    </tr>
+                    {% endfor %}        
+                </tbody>
+            </table>
+        </div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base_resident.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block detail %}
+Add pickup place
+{% endblock %}
+{% block content %}
+        <form action="#" method="get">
+            <div class="form-row pt-5">
+                {% csrf_token %}
+                {{ form|crispy}}
+            </div>
+            <div class="form-row pt-3">
+                <div class="col mr-5">
+                    <a class="btn btn-danger btn-lg btn-block" href="{% url 'home' %}" role="button">{% if user.is_authenticated %}
+                        {% if user.is_resident %}
+                          <span class="icon-feather" data-toggle="tooltip" data-placement="right" title="Driver profile"></span>
+                        {% else %}
+                          <span class="icon-graduation-cap" data-toggle="tooltip" data-placement="right" title="Resident profile"></span>
+                        {% endif %}
+                      {% endif %}Cancel</a>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">Save Station</button>
+                </div>
+            </div>
+        </form>
+{% endblock %}
